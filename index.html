@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Opobo Converge 2025 - United Kingdom</title>
 
-  <!-- Meta for SEO & Social Sharing -->
   <meta name="description" content="A celebration of the rich cultural heritage of Opobo people." />
   <meta property="og:image" content="https://sosoDev99.github.io/opobo-converge-2025/image.jpeg" />
   <meta property="og:url" content="https://sosoDev99.github.io/opobo-converge-2025/" />
@@ -20,65 +19,53 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #000;
-      color: #fff;
+      background-color: #add8e6; /* Light blue */
+      color: #000;
       text-align: center;
       min-height: 100vh;
-      padding: 2rem 1rem;
-      position: relative;
+      padding: 1rem;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
+      padding-top: 1rem;
     }
 
-   .logo {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  width: 100px;      /* smaller base width */
-  max-width: 20vw;   /* scale relative to viewport width */
-  height: auto;
-  z-index: 10;
-}
-
-@media (max-width: 600px) {
-  .logo {
-    width: 60px;     /* smaller on small screens */
-    top: 0.5rem;
-    left: 0.5rem;
-  }
-}
-
+    .logo {
+      display: block;
+      margin: 0 auto 1rem;
+      max-width: 150px;
+      height: auto;
+    }
 
     h1 {
       font-size: 3rem;
       font-weight: bold;
-      color: #FFA500;
-      margin-top: 2rem;
+      color: #ff8c00;
+      margin-top: 1rem;
     }
 
     .description {
-      font-size: 1.3rem;
-      color: #ffdead;
-      margin: 1rem 0 2rem;
+      font-size: 1.2rem;
+      color: #333;
+      margin: 0.5rem 0 2rem;
     }
 
     #countdown {
       font-size: 2rem;
       font-weight: bold;
-      color: #00ffff;
+      color: #000080;
       margin-bottom: 2rem;
     }
 
     .promo-image {
       width: 100%;
-      max-width: 700px;
+      max-width: 750px;
       margin: 2rem auto;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
       display: block;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     }
 
     .video-container {
@@ -99,15 +86,14 @@
 
     .register-btn {
       background: #228B22;
-      color: #fff;
+      color: white;
       padding: 1rem 2rem;
       font-size: 1.2rem;
       border: none;
       border-radius: 8px;
       text-decoration: none;
-      box-shadow: 0 4px 12px rgba(34, 139, 34, 0.4);
-      transition: background 0.3s;
       display: inline-block;
+      margin-top: 1rem;
     }
 
     .register-btn:hover {
@@ -122,21 +108,19 @@
         font-size: 1rem;
       }
       #countdown {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
       }
       .logo {
-        width: 80px;
-        top: 10px;
-        left: 10px;
+        max-width: 100px;
       }
     }
   </style>
 </head>
 
 <body>
-  <img src="logo.jpeg" alt="Opobo Logo" class="logo" />
-
   <div class="container">
+    <img src="logo.jpeg" alt="Opobo Logo" class="logo" />
+
     <h1>Opobo Converge 2025</h1>
     <p class="description">A celebration of the rich cultural heritage of Opobo people.</p>
 
@@ -146,7 +130,7 @@
 
     <div class="video-container">
       <iframe 
-        src="https://www.youtube.com/embed/bCzLyETw1ys?autoplay=1&mute=1&rel=0&modestbranding=1&controls=1"
+        src="https://www.youtube.com/embed/bCzLyETw1ys?autoplay=1&mute=1&rel=0&modestbranding=1"
         allow="autoplay; encrypted-media"
         allowfullscreen>
       </iframe>
