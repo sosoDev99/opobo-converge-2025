@@ -2,84 +2,110 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Opobo Converge United Kingdom 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opobo Converge 2025 - United Kingdom</title>
+
+  <!-- Meta description for SEO -->
+  <meta name="description" content="A cultural celebration of the rich cultural heritage of Opobo people." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Opobo Converge 2025 - United Kingdom" />
+  <meta property="og:description" content="A cultural celebration of the rich cultural heritage of Opobo people." />
+  <meta property="og:image" content="https://yourdomain.com/image.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Opobo Converge 2025 - United Kingdom" />
+  <meta name="twitter:description" content="A cultural celebration of the rich cultural heritage of Opobo people." />
+  <meta name="twitter:image" content="https://yourdomain.com/image.jpeg" />
+
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #fdfdfd;
-      color: #222;
-      line-height: 1.6;
+    /* Reset */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
     }
-    header {
-      background: #002244;
-      color: white;
-      padding: 2rem 1rem;
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
       text-align: center;
+      background: url('background.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      min-height: 100vh;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
+    .overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
     }
-    .content {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.8);
     }
-    .cta {
-      text-align: center;
-      margin: 2rem 0;
+    p.description {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
     }
-    .cta a {
+    img.promo-image {
+      max-width: 320px;
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      margin-bottom: 2rem;
+      border: 3px solid #fff;
+    }
+    a.register-btn {
       display: inline-block;
       background: #228B22;
       color: white;
       padding: 1rem 2rem;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
-      transition: background 0.3s;
+      font-size: 1.2rem;
+      box-shadow: 0 5px 15px rgba(34, 139, 34, 0.6);
+      transition: background-color 0.3s ease;
     }
-    .cta a:hover {
-      background: #1e7a1e;
+    a.register-btn:hover {
+      background-color: #1e7a1e;
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #666;
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      p.description {
+        font-size: 1rem;
+      }
+      img.promo-image {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Opobo Converge United Kingdom 2025</h1>
-    <p>A Cultural Celebration for the New Generation of Opobians in the UK</p>
-  </header>
+  <div class="overlay"></div>
 
-  <section class="content">
-<img src="image.jpeg" alt="Opobo Converge 2025 Flyer" style="width:100%; max-width:600px; display:block; margin: 20px auto; border-radius: 10px;" />
-    <h2>🗓 Saturday, 9th August 2025</h2>
-    <p><strong>📍 Heronsbrook Meeting Place</strong><br>
-    5 Wadesmill Lane, Walnut Tree, Milton Keynes, MK7 7ED</p>
+  <h1>Opobo Converge 2025</h1>
+  <p class="description">A cultural celebration of the rich cultural heritage of Opobo people.</p>
 
-    <p>Join us for an unforgettable day of culture, food, language, and community. This family-friendly gathering will feature traditional music, dance, storytelling, Ibani language activities for children, and more.</p>
+  <!-- Promotional image -->
+  <img src="image.jpeg" alt="Opobo Converge 2025 Flyer" class="promo-image" />
 
-    <h3>🎽 Dress Code</h3>
-    <p>Men: White Etibo shirt with a wrapper of your choice<br>
-    Ladies: White blouse with a wrapper of your choice</p>
-
-    <h3>📝 Registration Required</h3>
-    <p>For safety and planning purposes, all guests must register in advance. Registration closes on <strong>Friday, 8th August 2025</strong>.</p>
-
-    <div class="cta">
-      <a href="https://forms.gle/oDfojGzXJBSbfoCC7" target="_blank">Register Now</a>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Opobo Converge Committee · All Rights Reserved
-  </footer>
+  <!-- Registration button -->
+  <a href="https://forms.gle/oDfojGzXJBSbfoCC7" target="_blank" class="register-btn" rel="noopener noreferrer">
+    Register Now
+  </a>
 </body>
 </html>
