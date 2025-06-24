@@ -33,13 +33,24 @@
       margin: 0 auto;
     }
 
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 120px;
-      height: auto;
-    }
+   .logo {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 100px;      /* smaller base width */
+  max-width: 20vw;   /* scale relative to viewport width */
+  height: auto;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;     /* smaller on small screens */
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
+
 
     h1 {
       font-size: 3rem;
