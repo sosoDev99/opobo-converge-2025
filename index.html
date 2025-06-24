@@ -41,15 +41,15 @@
     }
 
     .container {
-      max-width: 90%;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
     h1 {
       font-size: 2.8rem;
@@ -73,17 +73,16 @@
       margin-bottom: 2rem;
     }
 
-    img.promo-image {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 2rem auto;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-      border: 3px solid #fff;
-      max-width: 800px;
-    }
+  img.promo-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+  border: 3px solid #fff;
+}
 
     a.register-btn {
       display: inline-block;
@@ -159,5 +158,31 @@
     updateCountdown();
     setInterval(updateCountdown, 1000);
   </script>
+<script>
+  const countdownElement = document.getElementById("countdown");
+  const targetDate = new Date("2025-08-09T00:00:00");
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = targetDate - now;
+
+    if (diff <= 0) {
+      countdownElement.innerText = "The event is today! 🎉";
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    countdownElement.innerText =
+      `Countdown: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
 </body>
 </html>
